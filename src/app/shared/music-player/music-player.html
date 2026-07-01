@@ -1,0 +1,15 @@
+<audio #audioEl src="audios/daynigthmorning-invitation-213664.mp3" loop preload="auto"></audio>
+<button
+  type="button"
+  class="music-player"
+  [class.is-hidden]="!visible()"
+  [class.is-playing]="isPlaying()"
+  (click)="toggle()"
+  [attr.aria-label]="isPlaying() ? 'Pause music' : 'Play music'"
+>
+  <span class="music-player__bars" aria-hidden="true">
+    <span></span>
+    <span></span>
+    <span></span>
+  </span>
+</button>

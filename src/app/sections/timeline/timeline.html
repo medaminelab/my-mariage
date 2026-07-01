@@ -1,0 +1,17 @@
+<section class="timeline">
+  <h2 class="timeline__heading" appScrollReveal>{{ data().scheduleHeading }}</h2>
+  <ol class="timeline__list">
+    @for (item of data().schedule; track item.title) {
+      <li class="timeline__item" appScrollReveal>
+        <span class="timeline__icon" aria-hidden="true">{{ item.icon }}</span>
+        <div class="timeline__body">
+          <p class="timeline__time">{{ item.time }}</p>
+          <h3 class="timeline__title">{{ item.title }}</h3>
+          @if (item.description) {
+            <p class="timeline__description">{{ item.description }}</p>
+          }
+        </div>
+      </li>
+    }
+  </ol>
+</section>

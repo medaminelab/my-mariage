@@ -1,0 +1,12 @@
+<app-music-player #music [visible]="introDismissed()" />
+@if (!introDismissed()) {
+  <app-envelope-intro (openStarted)="music.play()" (opened)="onIntroOpened()" />
+} @else {
+  <app-language-switcher />
+  <app-hero id="hero" />
+  <app-story id="story" />
+  <app-timeline id="timeline" />
+  <app-venue id="venue" />
+  <app-info id="info" />
+}
+<router-outlet />

@@ -1,0 +1,22 @@
+@if (hasArrived()) {
+  <p class="arrived">{{ labels().arrived }}</p>
+} @else {
+  <div class="countdown" role="timer" aria-live="polite">
+    <div class="unit">
+      <span class="value">{{ timeRemaining().days }}</span>
+      <span class="label">{{ labels().days }}</span>
+    </div>
+    <div class="unit">
+      <span class="value">{{ timeRemaining().hours }}</span>
+      <span class="label">{{ labels().hours }}</span>
+    </div>
+    <div class="unit">
+      <span class="value">{{ timeRemaining().minutes }}</span>
+      <span class="label">{{ labels().minutes }}</span>
+    </div>
+    <div class="unit">
+      <span class="value">{{ timeRemaining().seconds }}</span>
+      <span class="label">{{ labels().seconds }}</span>
+    </div>
+  </div>
+}

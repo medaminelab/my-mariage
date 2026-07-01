@@ -1,0 +1,46 @@
+{
+  "envelope": {
+    "openLabel": "انقروا لفتح الدعوة",
+    "invitedText": "أنتم مدعوون"
+  },
+  "eyebrow": "نحن نتزوج",
+  "partnerOne": "محمد أمين",
+  "partnerTwo": "سيرين",
+  "weddingDateIso": "2026-09-05T16:00:00",
+  "weddingDateLabel": "السبت 5 سبتمبر 2026",
+  "storyHeading": "قصتنا",
+  "story": "بدأت قصتنا بلقاء عفوي في حفل عيد ميلاد صديق مشترك، وتحوّلت إلى عقد كامل من المغامرات والضحك والدعم الذي لا يتزعزع. لا يسعنا الانتظار للاحتفال بهذا الفصل الجديد مع أعز الناس إلى قلوبنا.",
+  "scheduleHeading": "برنامج الحفل",
+  "schedule": [
+    { "time": "4:00 مساءً", "title": "حفل الزفاف", "icon": "💍", "description": "تبادل العهود في حديقة الورود" },
+    { "time": "5:30 مساءً", "title": "حفل الكوكتيل", "icon": "🥂", "description": "مشروبات ومقبلات على الشرفة" },
+    { "time": "7:00 مساءً", "title": "العشاء", "icon": "🍽️", "description": "عشاء جالس تحت الأضواء المتلألئة" },
+    { "time": "9:00 مساءً", "title": "السهرة", "icon": "🎉", "description": "رقص واحتفال حتى آخر الليل" }
+  ],
+  "venueHeading": "المكان",
+  "venue": {
+    "name": "دار شمس",
+    "address": "دار شمس، شط مريم، سوسة، تونس",
+    "directionsUrl": "https://www.google.com/maps/search/?api=1&query=Dar+Chems+Chott+Meriem+Sousse+Tunisie",
+    "mapEmbedUrl": "https://www.google.com/maps?q=Dar+Chems+Chott+Meriem+Sousse+Tunisie&output=embed",
+    "directionsLabel": "الحصول على الاتجاهات"
+  },
+  "dressCodeLabel": "قواعد اللباس",
+  "dressCode": "إطلالة أنيقة بروح الحدائق — الألوان الباستيلية والأقمشة ذات الطبعات الزهرية مُستحسنة. يُفضل ارتداء أحذية مريحة لأن الحفل يقام على العشب.",
+  "rsvpLabel": "تأكيد الحضور",
+  "rsvpNote": "يُرجى تأكيد حضوركم قبل 1 أغسطس 2026 عبر رابط الدعوة أو التواصل عبر البيانات أدناه.",
+  "questionsLabel": "لديكم أسئلة؟",
+  "contact": {
+    "name": "محمد أمين وسيرين",
+    "email": "hello@mohamedamine-cyrine.wedding",
+    "phone": "+1 555 123 4567"
+  },
+  "signaturePrefix": "بكل الحب،",
+  "countdown": {
+    "days": "أيام",
+    "hours": "ساعات",
+    "minutes": "دقائق",
+    "seconds": "ثوانٍ",
+    "arrived": "لقد تزوجنا! 🎉"
+  }
+}

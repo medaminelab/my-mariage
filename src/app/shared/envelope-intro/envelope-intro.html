@@ -1,0 +1,38 @@
+<div class="envelope-intro" [class.is-leaving]="phase() === 'leaving'">
+  <app-language-switcher />
+  <button
+    type="button"
+    class="envelope"
+    [class.is-open]="phase() !== 'closed'"
+    (click)="open()"
+    [attr.aria-label]="data().envelope.openLabel"
+  >
+    <span class="envelope__body">
+      <svg class="envelope__creases" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+        <path class="envelope__crease-line envelope__crease-line--shadow" d="M0 100 L50 44 L100 100" />
+        <path class="envelope__crease-line envelope__crease-line--light" d="M0.5 99.3 L50.5 43.3 L100.5 99.3" />
+      </svg>
+      <span class="envelope__seam-shadow" aria-hidden="true"></span>
+    </span>
+    <span class="envelope__flap" aria-hidden="true">
+      <svg class="envelope__flap-edge" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <path class="envelope__flap-edge-line envelope__flap-edge-line--outer" d="M0 0 L50 100 L100 0" />
+        <path class="envelope__flap-edge-line envelope__flap-edge-line--inner" d="M0 2.4 L50 97.6 L100 2.4" />
+      </svg>
+    </span>
+    <span class="envelope__seal" aria-hidden="true">
+      <span class="envelope__seal-shadow"></span>
+      <span class="envelope__seal-half envelope__seal-half--left">
+        <img class="envelope__seal-photo" src="images/wax-seal-monogram.png" alt="" />
+      </span>
+      <span class="envelope__seal-half envelope__seal-half--right">
+        <img class="envelope__seal-photo" src="images/wax-seal-monogram.png" alt="" />
+      </span>
+    </span>
+    <span class="envelope__invited">{{ data().envelope.invitedText }}</span>
+    <span class="envelope__hint" [class.is-hidden]="phase() !== 'closed'">{{ data().envelope.openLabel }}</span>
+  </button>
+  <p class="envelope-intro__footer">
+    {{ data().partnerOne }} &amp; {{ data().partnerTwo }} · {{ data().weddingDateLabel }}
+  </p>
+</div>

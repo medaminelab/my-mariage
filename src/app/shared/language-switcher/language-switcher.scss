@@ -1,0 +1,39 @@
+:host {
+  position: fixed;
+  top: 1rem;
+  inset-inline-end: 1rem;
+  z-index: 10;
+}
+
+.language-switcher {
+  display: flex;
+  gap: 0.25rem;
+  background: color-mix(in srgb, var(--color-white) 70%, transparent);
+  border: 1px solid color-mix(in srgb, var(--color-sage-dark) 40%, transparent);
+  border-radius: 2rem;
+  padding: 0.25rem;
+  backdrop-filter: blur(4px);
+}
+
+.language-switcher__btn {
+  border: 0;
+  background: transparent;
+  padding: 0.4rem 0.85rem;
+  border-radius: 1.5rem;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: var(--color-charcoal);
+  cursor: pointer;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+.language-switcher__btn.is-active {
+  background: var(--color-sage-dark);
+  color: var(--color-white);
+}
+
+.language-switcher__btn:hover:not(.is-active) {
+  background: color-mix(in srgb, var(--color-sage-dark) 20%, transparent);
+}

@@ -1,0 +1,46 @@
+{
+  "envelope": {
+    "openLabel": "Cliquez pour ouvrir votre invitation",
+    "invitedText": "Vous êtes invités"
+  },
+  "eyebrow": "Nous nous marions",
+  "partnerOne": "Mohamed Amine",
+  "partnerTwo": "Cyrine",
+  "weddingDateIso": "2026-09-05T16:00:00",
+  "weddingDateLabel": "Samedi 5 septembre 2026",
+  "storyHeading": "Notre histoire",
+  "story": "Tout a commencé par une rencontre inattendue lors de l'anniversaire d'un ami commun, qui s'est transformée en une décennie d'aventures, de fous rires et d'un soutien sans faille. Nous avons hâte de célébrer ce nouveau chapitre avec les personnes que nous aimons le plus.",
+  "scheduleHeading": "Programme",
+  "schedule": [
+    { "time": "16h00", "title": "Cérémonie", "icon": "💍", "description": "Échange des vœux dans le jardin de roses" },
+    { "time": "17h30", "title": "Cocktail", "icon": "🥂", "description": "Boissons et amuse-bouches sur la terrasse" },
+    { "time": "19h00", "title": "Dîner", "icon": "🍽️", "description": "Dîner assis sous les guirlandes lumineuses" },
+    { "time": "21h00", "title": "Soirée dansante", "icon": "🎉", "description": "La fête continue jusqu'au bout de la nuit" }
+  ],
+  "venueHeading": "Lieu",
+  "venue": {
+    "name": "Dar Chems",
+    "address": "Dar Chems, Chott Meriem, Sousse, Tunisie",
+    "directionsUrl": "https://www.google.com/maps/search/?api=1&query=Dar+Chems+Chott+Meriem+Sousse+Tunisie",
+    "mapEmbedUrl": "https://www.google.com/maps?q=Dar+Chems+Chott+Meriem+Sousse+Tunisie&output=embed",
+    "directionsLabel": "Itinéraire"
+  },
+  "dressCodeLabel": "Tenue",
+  "dressCode": "Tenue de soirée champêtre — les tons pastel et les imprimés floraux sont les bienvenus. Prévoyez des chaussures confortables pour la pelouse.",
+  "rsvpLabel": "RSVP",
+  "rsvpNote": "Merci de confirmer votre présence avant le 1er août 2026 via le lien de votre invitation ou le contact ci-dessous.",
+  "questionsLabel": "Des questions ?",
+  "contact": {
+    "name": "Mohamed Amine & Cyrine",
+    "email": "hello@mohamedamine-cyrine.wedding",
+    "phone": "+1 555 123 4567"
+  },
+  "signaturePrefix": "Avec amour,",
+  "countdown": {
+    "days": "Jours",
+    "hours": "Heures",
+    "minutes": "Minutes",
+    "seconds": "Secondes",
+    "arrived": "Nous sommes mariés ! 🎉"
+  }
+}

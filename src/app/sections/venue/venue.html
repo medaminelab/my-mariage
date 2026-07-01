@@ -1,0 +1,19 @@
+<section class="venue">
+  <h2 class="venue__heading" appScrollReveal>{{ data().venueHeading }}</h2>
+  <div class="venue__card" appScrollReveal>
+    <div class="venue__details">
+      <h3 class="venue__name">{{ data().venue.name }}</h3>
+      <p class="venue__address">{{ data().venue.address }}</p>
+      <a class="venue__directions" [href]="data().venue.directionsUrl" target="_blank" rel="noopener">
+        {{ data().venue.directionsLabel }}
+      </a>
+    </div>
+    <iframe
+      class="venue__map"
+      [src]="mapEmbedUrl()"
+      title="Map to {{ data().venue.name }}"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </div>
+</section>

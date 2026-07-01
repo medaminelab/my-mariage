@@ -1,0 +1,14 @@
+<section class="hero">
+  <div class="hero__content">
+    <p class="hero__eyebrow hero__anim" style="--delay: 0s">{{ data().eyebrow }}</p>
+    <h1 class="hero__names hero__anim" style="--delay: 0.15s">
+      <span class="hero__name">{{ data().partnerOne }}</span>
+      <span class="hero__amp">&amp;</span>
+      <span class="hero__name">{{ data().partnerTwo }}</span>
+    </h1>
+    <p class="hero__date hero__anim" style="--delay: 0.3s">{{ data().weddingDateLabel }}</p>
+    <div class="hero__countdown hero__anim" style="--delay: 0.45s">
+      <app-countdown [targetDateIso]="data().weddingDateIso" [labels]="data().countdown" />
+    </div>
+  </div>
+</section>
