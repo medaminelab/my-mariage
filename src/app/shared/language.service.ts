@@ -1,4 +1,5 @@
-import { Injectable, computed, effect, signal } from '@angular/core';
+import { Injectable, computed, effect, inject, signal } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 import arData from '../i18n/wedding-data.ar.json';
 import frData from '../i18n/wedding-data.fr.json';
@@ -11,6 +12,8 @@ const STORAGE_KEY = 'wedding-lang';
 
 @Injectable({ providedIn: 'root' })
 export class LanguageService {
+  private readonly titleService = inject(Title);
+
   readonly lang = signal<Lang>(this.readStoredLang());
   readonly dir = computed<'ltr' | 'rtl'>(() => (this.lang() === 'ar' ? 'rtl' : 'ltr'));
   readonly data = computed<WeddingData>(() => DATA[this.lang()]);
@@ -19,6 +22,7 @@ export class LanguageService {
     effect(() => {
       document.documentElement.lang = this.lang();
       document.documentElement.dir = this.dir();
+      this.titleService.setTitle(this.data().pageTitle);
     });
   }
 
@@ -28,6 +32,15 @@ export class LanguageService {
   }
 
   private readStoredLang(): Lang {
-    return localStorage.getItem(STORAGE_KEY) === 'ar' ? 'ar' : 'fr';
+    if (this.pathRequestsArabic()) {
+      return 'ar';
+    }
+    const stored = localStorage.getItem(STORAGE_KEY);
+    return stored === 'ar' || stored === 'fr' ? stored : 'fr';
+  }
+
+  private pathRequestsArabic(): boolean {
+    const firstSegment = window.location.pathname.split('/').filter(Boolean)[0]?.toLowerCase();
+    return firstSegment === 'ar';
   }
 }

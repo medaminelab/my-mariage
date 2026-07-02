@@ -1,4 +1,5 @@
 {
+  "pageTitle": "Amine & Cyrine invitation",
   "envelope": {
     "openLabel": "Cliquez pour ouvrir votre invitation",
     "invitedText": "Vous êtes invités"
@@ -12,10 +13,10 @@
   "story": "Tout a commencé par une rencontre inattendue lors de l'anniversaire d'un ami commun, qui s'est transformée en une décennie d'aventures, de fous rires et d'un soutien sans faille. Nous avons hâte de célébrer ce nouveau chapitre avec les personnes que nous aimons le plus.",
   "scheduleHeading": "Programme",
   "schedule": [
-    { "time": "16h00", "title": "Cérémonie", "icon": "💍", "description": "Échange des vœux dans le jardin de roses" },
-    { "time": "17h30", "title": "Cocktail", "icon": "🥂", "description": "Boissons et amuse-bouches sur la terrasse" },
-    { "time": "19h00", "title": "Dîner", "icon": "🍽️", "description": "Dîner assis sous les guirlandes lumineuses" },
-    { "time": "21h00", "title": "Soirée dansante", "icon": "🎉", "description": "La fête continue jusqu'au bout de la nuit" }
+    { "time": "17h00", "title": "Acceuil des invités", "icon": "🌿", "description": "Installation & début des festivités" },
+    { "time": "17h30", "title": "Cérémonie", "icon": "💍", "description": "Arrivée des mariés & cérémonie de mariage" },
+    { "time": "19h00", "title": "Dîner", "icon": "🍽️", "description": "Un dîner convivial accompagné d'une douce musique live & découpe de gâteau" },
+    { "time": "21h00", "title": "Clôture de la soirée", "icon": "✨", "description": "Départ des mariés. Merci d'avoir partagé ce moment inoubliable avec nous ❤️" }
   ],
   "venueHeading": "Lieu",
   "venue": {

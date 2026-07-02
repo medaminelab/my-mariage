@@ -5,8 +5,8 @@ import { LanguageService } from '../language.service';
 
 type EnvelopePhase = 'closed' | 'opening' | 'leaving';
 
-const OPEN_ANIMATION_MS = 1700;
-const LEAVE_ANIMATION_MS = 900;
+const OPEN_ANIMATION_MS = 2000;
+const LEAVE_ANIMATION_MS = 2000;
 
 @Component({
   selector: 'app-envelope-intro',

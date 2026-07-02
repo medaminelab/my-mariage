@@ -6,6 +6,7 @@ export interface ScheduleItem {
 }
 
 export interface WeddingData {
+  pageTitle: string;
   envelope: {
     openLabel: string;
     invitedText: string;

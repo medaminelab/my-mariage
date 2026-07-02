@@ -1,6 +1,6 @@
 import { Injectable, NgZone, inject } from '@angular/core';
 
-const IDLE_MS = 5000;
+const IDLE_MS = 15000;
 const ACTIVITY_EVENTS = ['wheel', 'touchstart', 'touchmove', 'keydown', 'pointerdown'] as const;
 
 @Injectable({ providedIn: 'root' })
