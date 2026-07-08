@@ -20,6 +20,7 @@ export interface WeddingData {
   story: string;
   scheduleHeading: string;
   schedule: ScheduleItem[];
+  scheduleClosingNote: string;
   venueHeading: string;
   venue: {
     name: string;

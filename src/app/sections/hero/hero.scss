@@ -29,7 +29,6 @@
 .hero__eyebrow {
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  font-size: 0.8rem;
   color: var(--color-charcoal);
   opacity: 0.75;
   margin-bottom: 1rem;
@@ -40,8 +39,9 @@
   flex-direction: column;
   align-items: center;
   gap: 0.25rem;
-  font-size: clamp(2.75rem, 8vw, 5rem);
-  color: var(--color-charcoal);
+  font-family: var(--font-script);
+  color: var(--color-sage-dark);
+  font-size: clamp(2.75rem, 8vw, 4rem);
   line-height: 1.1;
 }
 
@@ -52,7 +52,7 @@
 .hero__amp {
   display: block;
   font-size: 0.4em;
-  color: var(--color-sage-dark);
+  color: var(--color-charcoal);
   font-style: italic;
 }
 

@@ -14,6 +14,7 @@
   font-size: clamp(1.75rem, 4vw, 2.5rem);
   color: var(--color-sage-dark);
   margin-bottom: 3rem;
+  font-family: var(--font-script);
 }
 
 .timeline__list {
@@ -60,8 +61,9 @@
 }
 
 .timeline__time {
-  font-size: 0.85rem;
   letter-spacing: 0.05em;
+  font-weight: 800;
+  font-size: 1.2rem;
   text-transform: uppercase;
   color: var(--color-sage);
   margin-bottom: 0.25rem;
@@ -76,6 +78,14 @@
   margin-top: 0.35rem;
   font-size: 0.95rem;
   opacity: 0.8;
+}
+
+.timeline__closing-note {
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--color-sage-dark);
 }
 
 @media (max-width: 480px) {

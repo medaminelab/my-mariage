@@ -1,19 +1,3 @@
 <section class="info">
-  <div class="info__grid">
-    <div class="info__card" appScrollReveal>
-      <h3 class="info__title">{{ data().dressCodeLabel }}</h3>
-      <p>{{ data().dressCode }}</p>
-    </div>
-    <div class="info__card" appScrollReveal>
-      <h3 class="info__title">{{ data().rsvpLabel }}</h3>
-      <p>{{ data().rsvpNote }}</p>
-    </div>
-    <div class="info__card" appScrollReveal>
-      <h3 class="info__title">{{ data().questionsLabel }}</h3>
-      <p>{{ data().contact.name }}</p>
-      <p><a [href]="'mailto:' + data().contact.email">{{ data().contact.email }}</a></p>
-      <p><a [href]="'tel:' + data().contact.phone">{{ data().contact.phone }}</a></p>
-    </div>
-  </div>
   <p class="info__signature">{{ data().signaturePrefix }} {{ data().partnerOne }} &amp; {{ data().partnerTwo }}</p>
 </section>

@@ -16,8 +16,9 @@
     { "time": "17h00", "title": "Acceuil des invités", "icon": "🌿", "description": "Installation & début des festivités" },
     { "time": "17h30", "title": "Cérémonie", "icon": "💍", "description": "Arrivée des mariés & cérémonie de mariage" },
     { "time": "19h00", "title": "Dîner", "icon": "🍽️", "description": "Un dîner convivial accompagné d'une douce musique live & découpe de gâteau" },
-    { "time": "21h00", "title": "Clôture de la soirée", "icon": "✨", "description": "Départ des mariés. Merci d'avoir partagé ce moment inoubliable avec nous ❤️" }
+    { "time": "21h00", "title": "Clôture de la soirée", "icon": "✨", "description": "Départ des mariés" }
   ],
+  "scheduleClosingNote": "Merci d'avoir partagé ce moment inoubliable avec nous ❤️",
   "venueHeading": "Lieu",
   "venue": {
     "name": "Dar Chems",
