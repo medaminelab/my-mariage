@@ -31,8 +31,8 @@
   display: block;
   width: 1.4rem;
   height: 1.4rem;
-  border-inline-end: 2px solid var(--color-sage-dark);
-  border-block-end: 2px solid var(--color-sage-dark);
+  border-right: 2px solid var(--color-sage-dark);
+  border-bottom: 2px solid var(--color-sage-dark);
   transform: rotate(45deg);
   opacity: 0.75;
 }
