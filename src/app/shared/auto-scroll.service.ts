@@ -1,6 +1,9 @@
 import { Injectable, NgZone, inject } from '@angular/core';
 
 const IDLE_MS = 15000;
+const SECTION_IDLE_OVERRIDES_MS: Record<string, number> = {
+  story: 30000,
+};
 const ACTIVITY_EVENTS = ['wheel', 'touchstart', 'touchmove', 'keydown', 'pointerdown'] as const;
 
 @Injectable({ providedIn: 'root' })
@@ -39,24 +42,25 @@ export class AutoScrollService {
     }
   }
 
-  private resetIdleTimer(): void {
+  private resetIdleTimer(sectionId?: string): void {
     clearTimeout(this.idleTimeoutId);
     if (!this.enabled) {
       return;
     }
-    this.idleTimeoutId = setTimeout(() => this.advanceToNextSection(), IDLE_MS);
+    const currentSectionId = sectionId ?? this.sections[this.getCurrentSectionIndex()]?.id;
+    const delay = SECTION_IDLE_OVERRIDES_MS[currentSectionId ?? ''] ?? IDLE_MS;
+    this.idleTimeoutId = setTimeout(() => this.advanceToNextSection(), delay);
   }
 
-  scrollToNextSection(): void {
-    const nextIndex = this.getCurrentSectionIndex() + 1;
-    if (nextIndex < this.sections.length) {
-      this.sections[nextIndex].scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
+  scrollToNextSection(): HTMLElement | undefined {
+    const nextSection = this.sections[this.getCurrentSectionIndex() + 1];
+    nextSection?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    return nextSection;
   }
 
   private advanceToNextSection(): void {
-    this.scrollToNextSection();
-    this.resetIdleTimer();
+    const nextSection = this.scrollToNextSection();
+    this.resetIdleTimer(nextSection?.id);
   }
 
   private getCurrentSectionIndex(): number {
