@@ -47,11 +47,15 @@ export class AutoScrollService {
     this.idleTimeoutId = setTimeout(() => this.advanceToNextSection(), IDLE_MS);
   }
 
-  private advanceToNextSection(): void {
+  scrollToNextSection(): void {
     const nextIndex = this.getCurrentSectionIndex() + 1;
     if (nextIndex < this.sections.length) {
       this.sections[nextIndex].scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
+  }
+
+  private advanceToNextSection(): void {
+    this.scrollToNextSection();
     this.resetIdleTimer();
   }
 

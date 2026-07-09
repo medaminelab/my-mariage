@@ -15,7 +15,7 @@
   "schedule": [
     { "time": "17h00", "title": "Acceuil des invités", "icon": "🌿", "description": "Retrouvailles, installation et premiers instants partagés avant le début de cette belle célébration." },
     { "time": "17h30", "title": "Cérémonie", "icon": "💍", "description": "L'arrivée des mariés, suivie du moment où nous unirons officiellement nos chemins." },
-    { "time": "19h00", "title": "Dîner", "icon": "🍽️", "description": "Un dîner convivial accompagné d'une douce musique live" },
+    { "time": "19h00", "title": "Dîner", "icon": "🍽️", "description": "Une parenthèse gourmande, bercée par une musique douce." },
     { "time": "21h00", "title": "Clôture de la soirée", "icon": "✨", "description": "La célébration s'achève, mais un nouveau chapitre commence." }
   ],
   "scheduleClosingNote": "Merci d'avoir partagé ce moment inoubliable avec nous ❤️",

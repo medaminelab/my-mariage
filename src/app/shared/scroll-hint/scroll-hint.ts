@@ -1,5 +1,7 @@
 import { Component, DestroyRef, OnInit, inject, signal } from '@angular/core';
 
+import { AutoScrollService } from '../auto-scroll.service';
+
 const BOTTOM_THRESHOLD_PX = 48;
 
 @Component({
@@ -10,8 +12,13 @@ const BOTTOM_THRESHOLD_PX = 48;
 })
 export class ScrollHint implements OnInit {
   private readonly destroyRef = inject(DestroyRef);
+  private readonly autoScroll = inject(AutoScrollService);
 
   protected readonly visible = signal(true);
+
+  protected scrollToNext(): void {
+    this.autoScroll.scrollToNextSection();
+  }
 
   private readonly onScroll = (): void => this.updateVisibility();
 

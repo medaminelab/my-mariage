@@ -1,3 +1,9 @@
-<div class="scroll-hint" [class.is-hidden]="!visible()" aria-hidden="true">
+<button
+  type="button"
+  class="scroll-hint"
+  [class.is-hidden]="!visible()"
+  aria-label="Scroll to next section"
+  (click)="scrollToNext()"
+>
   <span class="scroll-hint__chevron"></span>
-</div>
+</button>
