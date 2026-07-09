@@ -32,15 +32,14 @@ export class LanguageService {
   }
 
   private readStoredLang(): Lang {
-    if (this.pathRequestsArabic()) {
+    if (this.queryRequestsArabic()) {
       return 'ar';
     }
     const stored = localStorage.getItem(STORAGE_KEY);
     return stored === 'ar' || stored === 'fr' ? stored : 'fr';
   }
 
-  private pathRequestsArabic(): boolean {
-    const firstSegment = window.location.pathname.split('/').filter(Boolean)[0]?.toLowerCase();
-    return firstSegment === 'ar';
+  private queryRequestsArabic(): boolean {
+    return new URLSearchParams(window.location.search).get('lang')?.toLowerCase() === 'ar';
   }
 }
