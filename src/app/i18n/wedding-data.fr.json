@@ -10,13 +10,13 @@
   "weddingDateIso": "2026-09-05T16:00:00",
   "weddingDateLabel": "Samedi 5 septembre 2026",
   "storyHeading": "Notre histoire",
-  "story": "Certaines histoires commencent par un coup de foudre. La nôtre a commencé par une amitié, et le temps en a doucement écrit la suite.\n\nTout a commencé sur les bancs d’une classe préparatoire à Monastir. Deux étudiants, une même classe, une belle amitié qui s’est installée naturellement.\n\nLes années ont suivi leur cours. Entre la Tunisie et la France, les kilomètres nous ont séparés, mais jamais nos chemins ne se sont vraiment éloignés. Nous sommes restés présents l’un pour l’autre, laissant le temps écrire ce que nous n’aurions jamais pu prévoir.\n\nPuis est venue l’évidence. Ce qui nous liait depuis toujours a pris un autre sens, jusqu’à devenir l’amour que nous partageons désormais.\n\nEt aujourd’hui, le moment est venu d’écrire le plus beau des chapitres, et c’est avec une immense joie que nous vous invitons à le célébrer à nos côtés.",
+  "story": "Certaines histoires commencent par un coup de foudre. La nôtre a commencé par une amitié, et le temps en a doucement écrit la suite.\n\nTout a commencé sur les bancs d’une classe préparatoire à Monastir, où une belle amitié est née.\n\nLes années et la distance, entre la Tunisie et la France, n’ont jamais éloigné nos chemins. Nous sommes restés présents l’un pour l’autre, laissant le temps écrire notre histoire.\n\nPuis est venue l’évidence. Cette complicité a pris un autre sens et n’a jamais cessé de grandir.\n\nAujourd’hui, nous nous apprêtons à écrire le plus beau des chapitres et sommes heureux de vous inviter à le célébrer avec nous.  ❤️",
   "scheduleHeading": "Programme",
   "schedule": [
-    { "time": "17h00", "title": "Acceuil des invités", "icon": "🌿", "description": "Installation & début des festivités" },
-    { "time": "17h30", "title": "Cérémonie", "icon": "💍", "description": "Arrivée des mariés & cérémonie de mariage" },
-    { "time": "19h00", "title": "Dîner", "icon": "🍽️", "description": "Un dîner convivial accompagné d'une douce musique live & découpe de gâteau" },
-    { "time": "21h00", "title": "Clôture de la soirée", "icon": "✨", "description": "Départ des mariés" }
+    { "time": "17h00", "title": "Acceuil des invités", "icon": "🌿", "description": "Retrouvailles, installation et premiers instants partagés avant le début de cette belle célébration." },
+    { "time": "17h30", "title": "Cérémonie", "icon": "💍", "description": "L'arrivée des mariés, suivie du moment où nous unirons officiellement nos chemins." },
+    { "time": "19h00", "title": "Dîner", "icon": "🍽️", "description": "Un dîner convivial accompagné d'une douce musique live" },
+    { "time": "21h00", "title": "Clôture de la soirée", "icon": "✨", "description": "La célébration s'achève, mais un nouveau chapitre commence." }
   ],
   "scheduleClosingNote": "Merci d'avoir partagé ce moment inoubliable avec nous ❤️",
   "venueHeading": "Lieu",

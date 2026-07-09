@@ -1,0 +1,40 @@
+:host {
+  display: block;
+}
+
+.scroll-hint {
+  position: fixed;
+  inset-inline-start: 50%;
+  margin-inline-start: -0.7rem;
+  bottom: clamp(1rem, 3vh, 2rem);
+  z-index: 20;
+  pointer-events: none;
+  opacity: 1;
+  transition: opacity 0.4s ease;
+  animation: scroll-hint-bounce 1.8s ease-in-out infinite;
+}
+
+.scroll-hint.is-hidden {
+  opacity: 0;
+}
+
+.scroll-hint__chevron {
+  display: block;
+  width: 1.4rem;
+  height: 1.4rem;
+  border-inline-end: 2px solid var(--color-sage-dark);
+  border-block-end: 2px solid var(--color-sage-dark);
+  transform: rotate(45deg);
+  opacity: 0.75;
+}
+
+@keyframes scroll-hint-bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(8px);
+  }
+}

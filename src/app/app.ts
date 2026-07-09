@@ -5,6 +5,7 @@ import { AutoScrollService } from './shared/auto-scroll.service';
 import { EnvelopeIntro } from './shared/envelope-intro/envelope-intro';
 import { LanguageSwitcher } from './shared/language-switcher/language-switcher';
 import { MusicPlayer } from './shared/music-player/music-player';
+import { ScrollHint } from './shared/scroll-hint/scroll-hint';
 import { Hero } from './sections/hero/hero';
 import { Info } from './sections/info/info';
 import { Story } from './sections/story/story';
@@ -15,7 +16,7 @@ const SECTION_IDS = ['hero', 'story', 'timeline', 'venue', 'info'];
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, EnvelopeIntro, LanguageSwitcher, MusicPlayer, Hero, Story, Timeline, Venue, Info],
+  imports: [RouterOutlet, EnvelopeIntro, LanguageSwitcher, MusicPlayer, ScrollHint, Hero, Story, Timeline, Venue, Info],
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })
